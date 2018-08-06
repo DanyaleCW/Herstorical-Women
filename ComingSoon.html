@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="favicon-32x32.jpg" sizes="32x32"/>
+  <link href="https://fonts.googleapis.com/css?family=News+Cycle|Playfair+Display|Rubik" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville|Merriweather|Merriweather+Sans|Source+Sans+Pro"
+  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Roboto|Titillium+Web|Work+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous">
+  <title>Coming Soon</title>
+</head>
+<body>
+  <button type="button" class="btn">
+    <a id="home" href="javascript:gohome();">Home</a>
+  </button>
+
+  <div class="bgimg">
+    <div class="middle">
+      <h1>COMING SOON</h1>
+    </div>
+    <div class="bottomleft">
+      <p>Photo by Ludde Lorentz on Unsplash</p>
+    </div>
+  </div>
+
+
+<style>
+#home {  
+  color: white;
+}
+.btn {
+  background-color: gold;
+}  
+
+body, html { 
+  height: 100% 
+} 
+
+.bgimg { 
+  background-image: url('coming.jpg'); 
+  height: 100%;  
+  background-position: center;
+  background-size: cover; 
+  position: relative; 
+  color: white; 
+  font-family: "Courier New", Courier, monospace; 
+  font-size: 25px; 
+} 
+
+.bottomleft { 
+  position: absolute; 
+  bottom: 0; 
+  left: 16px; 
+ font-size: 10px;
+} 
+
+.middle { 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+} 
+
+hr { 
+  margin: auto; 
+  width: 40%; 
+}
+</style>
+
+<script>
+ function gohome() { window.location.href = "./Main/main.html" }
+</script>
+
+
+
+
+
+
+
+  
+	
+  </body>
+</html>
