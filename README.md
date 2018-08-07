@@ -12,8 +12,8 @@ I created this project to help me understand CSS and HTML layouts better and the
 ![women](https://user-images.githubusercontent.com/19499494/43746954-1224a536-99b5-11e8-83fd-72ae85f397dc.png)
 
 ## Tech/framework used
-Bootstrap
-W3 School styling
+~Bootstrap
+~W3 School styling
 
 
 
