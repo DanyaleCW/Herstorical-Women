@@ -8,13 +8,11 @@ I created this project to help me understand CSS and HTML layouts better and the
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
   crossorigin="anonymous"> -->
 
-##Screenshots
+## Screenshots
 ![women](https://user-images.githubusercontent.com/19499494/43746954-1224a536-99b5-11e8-83fd-72ae85f397dc.png)
 
-##Tech/framework used
-Built with
-	•	Bootstrap
-  •	W3 School styling
+## Tech/framework used
+Built with Bootstrap and W3
 
 
 
