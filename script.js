@@ -1,6 +1,6 @@
 
 function gohome() {
-    window.location.href = "../Main/main.html"
+    window.location.href = "../main.html"
 }
 
 // When the user scrolls down 95px from the top of the document, show the button
