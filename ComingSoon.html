@@ -15,6 +15,59 @@
   <title>Coming Soon</title>
 </head>
 <body>
+
+<style>
+  #home {
+    color: white;
+  }
+
+  .btn {
+    background-color: gold;
+  }
+
+  body,
+  html {
+    height: 100%
+  }
+
+  .bgimg {
+    background-image: url('coming.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    font-size: 10px;
+  }
+
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  hr {
+    margin: auto;
+    width: 40%;
+  }
+</style>
+
+<script>
+  function gohome() {
+    window.location.href = "main.html"
+  }
+</script>
+
   <button type="button" class="btn">
     <a id="home" href="javascript:gohome();">Home</a>
   </button>
@@ -27,55 +80,6 @@
       <p>Photo by Ludde Lorentz on Unsplash</p>
     </div>
   </div>
-
-
-<style>
-#home {  
-  color: white;
-}
-.btn {
-  background-color: gold;
-}  
-
-body, html { 
-  height: 100% 
-} 
-
-.bgimg { 
-  background-image: url('coming.jpg'); 
-  height: 100%;  
-  background-position: center;
-  background-size: cover; 
-  position: relative; 
-  color: white; 
-  font-family: "Courier New", Courier, monospace; 
-  font-size: 25px; 
-} 
-
-.bottomleft { 
-  position: absolute; 
-  bottom: 0; 
-  left: 16px; 
- font-size: 10px;
-} 
-
-.middle { 
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  text-align: center; 
-} 
-
-hr { 
-  margin: auto; 
-  width: 40%; 
-}
-</style>
-
-<script>
- function gohome() { window.location.href = "./Main/main.html" }
-</script>
 	
   </body>
 </html>

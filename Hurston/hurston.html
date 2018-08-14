@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle|Playfair+Display|Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville|Merriweather|Merriweather+Sans|Source+Sans+Pro"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Roboto|Titillium+Web|Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="hurston.css">
+
+<title>Zora Neale Hurston</title>
+</head>
+<body>
+
+<button type="button" class="btn">
+    <a id="home" href="javascript:gohome();">Home</a>
+</button>
+<br>
+<br>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="Dolores-Huerta1.jpg" alt="picture of Dolores Huerta" class="img-fluid" />
+            <div class="desc" class="text-secondary">Barbara Carrasco. Silkscreen 1999. National Portrait Gallery, Smithsonian Institution.
+            </div>
+        </div>
+
+        <div class="col-sm-8">
+            <h1 class="name" id="name"></h1>
+            <img class="quote" alt="si se puede" src="si se puede.jpg" class="img-fluid" />
+        </div>
+    </div>
+</div>
+<br>
+<div class="container-fluid">
+    <p id="description">
+    </p>
+
+    <h3 id="born"></h3>
+    <p>
+    </p>
+
+    <h3 id="awards"></h3>
+    <p>
+    </p>
+
+    <h3 id="about"></h3>
+    <p>
+    </p>
+
+    <h4>Please visit the
+        
+    </h4>
+
+    <h5>Citation Information</h5>
+    <h6 id="pictures"></h6>
+    
+    <br>
+    <br>
+    <h6 id="information"></h6>
+    
+    <br>
+
+
+    <footer id="foot-cont">
+        <a target="_blank" href="https://github.com/DanyaleCW">
+            <i class="fa fa-github-alt" style="font-size:36px"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/DanyaleCWalker">
+            <i class="fa fa-twitter w3-hover-opacity" style="font-size:36px"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/danyale-c-walker-b9385816">
+            <i class="fa fa-linkedin w3-hover-opacity" style="font-size:36px"></i>
+        </a>
+
+        <!-- <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button> -->
+        <p>Written, Coded, and Designed by Danyale C. Walker</p>
+
+        <button onclick="topFunction()" id="footer" title="Go to top">Top</button>
+    </footer>
+</div>
+
+<script>
+    // Create an object:
+    var hurston = {
+        firstName: "Zora Neale",
+        lastName: "Hurston",
+        description: "Anthropologist, Activist, Civil Rights Activist, Author",
+        born: "January 7, 1891 - January 28, 1960",
+        awardsHonors: "Bethune-Cookman College Award for Education and Human Relations and the English Department remains dedicated to preserving her cultural legacy.",
+        about: "In 1925 as the Harlem Renaissance gained momentum, Zora Neale Hurston headed to New York City. By the time of its height in the 1930s,Hurston was a preeminent Black female writer in the United States. It’s said that her apartment was a popular spot for social gatherings with the well-known artists of the time like Countee Cullen and Langston Hughes. Of Hurston’s more than 50 published novels, short stories, plays and essays, she wrote her most famous work Their Eyes Were Watching Godin 1937. Unlike the style of contemporaries Richard Wright and Ralph Ellison,Hurston did not write explicitly about Black people in the context of white America. She focused on the culture and traditions of African Americans through the poetry of their speech. Despite her earlier literary success, Hurston would suffer later in her career. Having difficulty getting published, she died poor and alone. Years later, Alice Walker would help revive interest in Hurston’s work with her essay, 'In Search of Zora Neale Hurston,' published in Ms. magazine in 1975. This essay, alongside her edits of notable works like “I Love Myself When I am Laughing and Then Again When I am Looking Mean and Impressive,” brought Hurston to the attention of a new generation of readers.",
+        picture: "placeholder",
+        information: ['<a href="https://en.wikipedia.org/wiki/Zora_Neale_Hurston" target=_blank> https://en.wikipedia.org/wiki/Zora_Neale_Hurston</a>',
+        '<a href="https://www.zoranealehurston.com/" target=_blank> https://www.zoranealehurston.com/</a>'],
+
+        fullName : function () {
+            return this.firstName + " " + this.lastName;
+        },
+        descrip : function () { 
+            return this.description; 
+        },
+        date : function () {
+            return "Born" + "<br>" + " " + this.born; 
+        },
+        awards : function () {
+            return "Awards & Honors" + "<br>" + " " + this.awardsHonors;
+        },
+        abouts : function () { 
+            return "About" + "<br>" + " " + this.about; 
+        },
+        pictures : function () { 
+            return "Pictures" + " <br>" + " " + this.picture;
+        },
+        informations : function () { 
+            return "Information" + "<br>" + " " + this.information + " " + "<br>";
+        }
+    };
+    
+    // Display data from the object:
+    document.getElementById("name").innerHTML = hurston.fullName();
+    document.getElementById("description").innerHTML = hurston.descrip();
+    document.getElementById("born").innerHTML = hurston.date(); document.getElementById("awards").innerHTML = hurston.awards();
+    document.getElementById("about").innerHTML = hurston.abouts(); document.getElementById("pictures").innerHTML = hurston.pictures();
+    document.getElementById("information").innerHTML = hurston.informations(); 
+</script>
+
+<script src="../script.js"></script>
+</body>
+
+</html>
+
