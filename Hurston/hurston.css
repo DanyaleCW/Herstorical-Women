@@ -3,9 +3,21 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+button {
+    padding-right: 10px;
+}
+
+.btn {
+    background-color: rgb(59, 86, 145);
+}
+
+#name {
+    text-align: center;
+}
+
 p {
     font-family: 'Playfair Display', serif;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 h3 {
@@ -14,14 +26,13 @@ h3 {
 
 .desc {
     font-size: 11px;
+    text-align: center;
 }
 
-.btn {
-    background-color: rgb(94, 193, 162);
-}
+
 
 a {
-    color: palevioletred;
+    color: rgb(146, 149, 156);
 }
 
 #home {
@@ -29,7 +40,7 @@ a {
 }
 
 .col-sm-8 {
-    top: 110px;
+    top: 175px;
 }
 
 img.quote {
@@ -55,7 +66,7 @@ footer {
     /* Remove borders */
     outline: none;
     /* Remove outline */
-    background-color: rgb(94, 193, 162);
+    background-color: rgb(59, 86, 145);
     /* Set a background color */
     color: white;
     /* Text color */
