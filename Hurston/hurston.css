@@ -1,10 +1,5 @@
-body {
+main {
     padding: 17px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-button {
-    padding-right: 10px;
 }
 
 .btn {
@@ -13,26 +8,31 @@ button {
 
 #name {
     text-align: center;
+    font-family: 'Source Sans Pro',
+    sans-serif;
+}
+
+img.quote {
+    padding: 50px 100px 100px 170px;
 }
 
 p {
-    font-family: 'Playfair Display', serif;
     font-size: 18px;
 }
 
-h3 {
+h3,
+h4,
+p {
     font-family: 'Playfair Display', serif;
 }
 
 .desc {
-    font-size: 11px;
+    font-size: 8px;
     text-align: center;
 }
 
-
-
 a {
-    color: rgb(146, 149, 156);
+    color: rgb(129, 131, 136);
 }
 
 #home {
@@ -41,10 +41,6 @@ a {
 
 .col-sm-8 {
     top: 175px;
-}
-
-img.quote {
-    padding: 50px 100px 100px 170px;
 }
 
 footer {
