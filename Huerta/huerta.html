@@ -76,8 +76,7 @@
 <script>
   // Create an object:
   var huerta = {
-    firstName: "Dolores Clara",
-    lastName: "Fernández Huerta",
+    name: "Dolores Clara Fernández Huerta",
     image: '<img src="Dolores-Huerta1.jpg" alt="picture of Dolores Huerta" class="img-fluid"/>',
     imageCitation: "Barbara Carrasco. Silkscreen 1999. National Portrait Gallery, Smithsonian Institution.",
     quote: '<img alt="si se puede" src="si se puede.jpg" class="img-fluid" />',
@@ -90,7 +89,7 @@
     information: '<a href="https://www.biography.com/people/dolores-huerta-188850"  target=_blank>https://www.biography.com/people/dolores-huerta-188850 </a>',
 
     fullName: function () {
-      return this.firstName + " " + this.lastName;
+      return this.name;
     },
     images: function () {
       return this.image;

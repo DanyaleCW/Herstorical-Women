@@ -1,32 +1,3 @@
-/* Headers:
-font-family: 'Playfair Display',
-serif;
-font-family: 'News Cycle',
-sans-serif;
-font-family: 'Rubik',
-sans-serif; */
-
-/* Body:
-font-family: 'Lato',
-sans-serif;
-font-family: 'Merriweather',
-serif;
-font-family: 'Merriweather Sans',
-sans-serif;
-font-family: 'Source Sans Pro',
-sans-serif;
-font-family: 'Libre Baskerville',
-serif; */
-
-/* Multipurpose:
-font-family: 'Roboto',
-sans-serif;
-font-family: 'Titillium Web',
-sans-serif;
-font-family: 'Libre Franklin',
-sans-serif;
-font-family: 'Work Sans',
-sans-serif; */
 
 body {
     padding: 17px;
@@ -52,18 +23,25 @@ h5,
     padding-top: 20px;
 }
 
-.name {
+#name {
     padding-top: 15%;
     text-align: center;
 }
 
-.quote {
+#quote {
     text-align: center;
     color: blue;
 }
 
+#image-cit {
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+}
+
 a {
     text-decoration: none;
+    color: blue;
 }
 
 .btn-toolbar {
