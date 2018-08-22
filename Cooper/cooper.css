@@ -46,14 +46,21 @@ h1 {
     serif;
 }
 
-.name {
+#name {
     padding-top: 15%;
     text-align: center;
+}
+
+#quote {
+    color: maroon;
+    text-align: center;
+    font-size: 18px;
 }
 
 a {
     text-decoration: none;
     color: maroon;
+    
 }
 
 #home {
