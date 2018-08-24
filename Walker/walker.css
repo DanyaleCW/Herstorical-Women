@@ -15,7 +15,7 @@ h5 {
     font-family: "Raleway", sans-serif
 }
 
-#name {
+#walker-name {
     font-size: 40px;
     padding-top: 20px;
     text-align: center;
@@ -25,16 +25,17 @@ h5 {
     top: 70px;
 }
 
-#quote {
+#walker-quote {
+    color: rgb(187, 162, 53);
     font-size: 20px;
     text-align: center;
 } 
 
-#title {
+#walker-title {
     font-size: 20px;
 }
 
-.culture,
+
 .wonderful {
     border-radius: 50%;
 }

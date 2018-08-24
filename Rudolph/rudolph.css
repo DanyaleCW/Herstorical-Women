@@ -37,6 +37,11 @@ h5,
     text-decoration: none;
     color: black;
     font-size: 11px;
+    text-align: center;
+}
+
+#description {
+    font-size: 20px;
 }
 
 a {
