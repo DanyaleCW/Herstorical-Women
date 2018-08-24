@@ -39,7 +39,7 @@ var rudolph = {
         return this.awardsHonors[0] + "<br>" + this.awardsHonors[1] + "<br>" + this.awardsHonors[2] + "<br>" + this.awardsHonors[3] + "<br>" + this.awardsHonors[4] + "<br>" + this.awardsHonors[5] + "<br>" + this.awardsHonors[6] + "<br>" + this.awardsHonors[7] + "<br>" + this.awardsHonors[8] + "<br>" + this.awardsHonors[9] + "<br>" + this.awardsHonors[10] + " <br>" + this.awardsHonors[11];
     },
     abouts: function () {
-        return this.about[0] + " <br>" + "<br>" + this.about[1] + "<br>" + "<br>" + this.about[2] + "<br>" + "<br>" + this.about[3];
+        return this.about[0] + " <br>" + "<br>" + this.about[1] + "<br>" + "<br>" + this.about[2];
     },
     foundations: function () {
         return this.foundation;
