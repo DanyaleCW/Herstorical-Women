@@ -1,4 +1,4 @@
-
+//when user clicks returns to main html page
 function gohome() {
     window.location.href = "../main.html"
 }
@@ -36,8 +36,8 @@ function Person(name, title, quote, born, awards, about, foundation, pictures, i
 
 var walker = new Person(
     "Madam C.J. Walker",
-    "Entrepreneur, Philanthropist, Self-made Millionaire, and a Political, Social and Civil Rights Activist.",
-    "Do Not Sit and Wait for <br> the Opportunities to Come <br> Get Up and Make Them",
+    "Entrepreneur, Philanthropist, Self-made Millionaire, and a Political, Social and Civil Rights Activist",
+    ["Do Not Sit and Wait for", "the Opportunities to Come", "Get Up and Make Them"],
     "December 23, 1867 – May 25, 1919",
     "Junior Achievement U.S. Business Hall of Fame and National Women’s Hall of Fame for Cosmetology and Direct Sales.",
     "Madam C. J. Walker was born in 1867 to two sharecroppers, her given name was Sarah Breedlove. She is best known for inventing, manufacturing and marketing her own line of hair care products. By 1917, the Madam C.J. Walker Manufacturing Company was the largest black-owned business in the country with a revenue of over $500,000. Her company allowed black women to be financially independent, educate their children and own their own homes. Madam Walker was also a philanthropist. She bequeathed 2/3 of her estate and future profits to charity and supportedseveral organizations and causes such as the National Association of Colored People (NAACP),the Tuskegee Institute and anti-lynching legislation, to name a few. When Madam C. J. Walker died in 1919, she left an estate worth over $1 million.",
@@ -47,7 +47,7 @@ var walker = new Person(
 
 document.getElementById("walker-name").innerHTML = walker.name;
 document.getElementById("walker-title").innerHTML = walker.title;
-document.getElementById("walker-quote").innerHTML = walker.quote;
+document.getElementById("walker-quote").innerHTML = walker.quote[0] + "<br>" + walker.quote[1] + "<br>" + walker.quote[2];
 document.getElementById("walker-born").innerHTML = walker.born;
 document.getElementById("walker-awards").innerHTML = walker.awards;
 document.getElementById("walker-about").innerHTML = walker.about;

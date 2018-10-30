@@ -42,13 +42,28 @@ sans-serif; */
     padding-top: 20px;
  }
 
- a {
+ li {
+   padding: .2em;
+ }
+
+ a,
+ li {
     text-decoration: none;
  }
 
+ header {
+   text-align: center;
+   padding: 30px;
+ }
+
+/* main.html navbar center */
  .btn-toolbar {
     text-align: center;
  }
+
+/* .shadow p-3 mb-5 bg-white rounded top {
+  padding-top: 30px;
+} */
 
  #foot-cont {
     padding: 15px;
@@ -56,7 +71,7 @@ sans-serif; */
 
 .spotlight {
     background-color: grey;
-} 
+}
 
 #footer {
     display: none;

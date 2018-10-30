@@ -2,6 +2,10 @@ main {
     padding: 17px;
 }
 
+.button {
+  padding-left: 15px;
+}
+
 .btn {
     background-color: rgb(59, 86, 145);
 }

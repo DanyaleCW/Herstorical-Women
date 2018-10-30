@@ -4,6 +4,9 @@ body {
     sans-serif;
 }
 
+.button {
+  padding-left: 15px;
+}
 
 h1 {
     font-family: 'Playfair Display',
@@ -62,4 +65,3 @@ footer {
 #footer:hover {
     background-color: #555; /* Add a dark-grey background on hover */
 }
-

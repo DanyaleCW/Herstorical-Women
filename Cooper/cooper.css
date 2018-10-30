@@ -1,32 +1,3 @@
-/* Headers:
-font-family: 'Playfair Display',
-serif;
-font-family: 'News Cycle',
-sans-serif;
-font-family: 'Rubik',
-sans-serif; */
-
-/* Body:
-font-family: 'Lato',
-sans-serif;
-font-family: 'Merriweather',
-serif;
-font-family: 'Merriweather Sans',
-sans-serif;
-font-family: 'Source Sans Pro',
-sans-serif;
-font-family: 'Libre Baskerville',
-serif; */
-
-/* Multipurpose:
-font-family: 'Roboto',
-sans-serif;
-font-family: 'Titillium Web',
-sans-serif;
-font-family: 'Libre Franklin',
-sans-serif;
-font-family: 'Work Sans',
-sans-serif; */
 
 body,
 h2,
@@ -39,6 +10,10 @@ h5 {
 
 body {
     padding: 17px;
+}
+
+.button {
+    padding-left: 15px;
 }
 
 h1 {
@@ -60,11 +35,11 @@ h1 {
 a {
     text-decoration: none;
     color: maroon;
-    
+
 }
 
 #home {
-    color: aliceblue;
+    color: white;
 }
 
 .btn-toolbar {
@@ -73,6 +48,10 @@ a {
 
 .btn {
     background-color: maroon;
+}
+
+.desc {
+  font-size: 11px;
 }
 
 footer {

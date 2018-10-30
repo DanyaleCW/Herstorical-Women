@@ -4,6 +4,10 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.button {
+  padding-left: 15px;
+}
+
 h1 {
     font-family: 'Playfair Display', serif;
 }
@@ -29,7 +33,7 @@ h5 {
     color: rgb(187, 162, 53);
     font-size: 20px;
     text-align: center;
-} 
+}
 
 #walker-title {
     font-size: 20px;

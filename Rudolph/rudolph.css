@@ -4,10 +4,13 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.button {
+  padding-left: 15px;
+}
+
 #home {
     color: aliceblue;
 }
-
 
 h1,
 h2,
