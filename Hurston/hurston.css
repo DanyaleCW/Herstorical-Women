@@ -14,6 +14,7 @@ main {
     text-align: center;
     font-family: 'Source Sans Pro',
     sans-serif;
+    font-size: 60px;
 }
 
 img.quote {
@@ -37,7 +38,7 @@ p {
 }
 
 a {
-    color: rgb(129, 131, 136);
+    color: rgb(59, 86, 145);
 }
 
 #home {

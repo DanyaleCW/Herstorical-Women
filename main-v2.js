@@ -1,4 +1,17 @@
+var quotes = ['cooper-quote.png', 'maeJemison.png'];
 
+// var img = document.getElementById('imageToChange');
+// img.addEventListener("onload", function() {
+//   this.src = quotes[Math.floor(Math.random() * quotes.length)];
+// });
+
+function getQuotes(array, path) {
+  path = path || 'Quotes/';
+  var num = Math.floor(Math.random() * array.length);
+  var img = array[num];
+  var imgStr = '<img src=" ' + path + img + '" alt = "">';
+  // document.getElementById('imageToChange'); document.write(imgStr); document.close();
+}
 
 
 function Person(name, quote, title, born, awards, about, foundation, pictures, information) {

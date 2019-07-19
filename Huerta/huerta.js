@@ -1,4 +1,4 @@
-var huerta = {
+let huerta = {
     name: "Dolores Clara Fernández Huerta",
     image: '<img src="Dolores-Huerta1.jpg" alt="picture of Dolores Huerta" class="img-fluid"/>',
     imageCitation: "Barbara Carrasco. Silkscreen 1999. National Portrait Gallery, Smithsonian Institution.",

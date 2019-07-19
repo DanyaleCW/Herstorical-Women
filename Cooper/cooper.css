@@ -1,9 +1,5 @@
 
-body,
-h2,
-h3,
-h4,
-h5 {
+body {
     font-family: 'Merriweather',
     serif;
 }
@@ -56,6 +52,7 @@ a {
 
 footer {
     padding-top: 50px;
+
 }
 
 #footer {

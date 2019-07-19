@@ -1,8 +1,8 @@
-var rudolph = {
+let rudolph = {
     name: "Wilma Glodean Rudolph",
     image: '<img src="rudolph.jpg" alt="Wilma Rudolph holding her medals" class="img-fluid"/>',
-    imageCitation: "Wilma Rudolph hold her Gold Medals",
-    quote: 'My doctor told me I would never walk again. <br> My mother told me I would. <br> I believed my mother',
+    imageCitation: "Wilma Rudolph holding her Gold Medals",
+    quote: '&#8220;My doctor told me I would never walk again. <br> My mother told me I would. <br> I believed my mother&#8221;',
     description: "Olympic Champion",
     born: "June 23, 1940 - November 12, 1994",
     awardsHonors: ["First American Woman to win three Olympic gold medals",
@@ -11,7 +11,7 @@ var rudolph = {
     ],
     foundation: "Please visit the <a href='https://www.womenssportsfoundation.org/programs/awards/wilma-rudolph-courage-award/' target=_blank>Women's Sports Foundation</a> to find out about and donate to the William Rudolph Courage Award.",
     picture: ['<a   href="http://robinmork.com/2017/05/lioness-project-wilma-rudolph/" target=_blank>http://robinmork.com/2017/05/lioness-project-wilma-rudolph/</a>',
-    '<a href="https://myhero.com/W_rudolph_dnhs_US_2010_ul" target=_blank>https://myhero.com/W_rudolph_dnhs_US_2010_ul</a>', 
+    '<a href="https://myhero.com/W_rudolph_dnhs_US_2010_ul" target=_blank>https://myhero.com/W_rudolph_dnhs_US_2010_ul</a>',
     '<a href="https://janellenorman94.wordpress.com/2015/02/09/black-history-month-wilma-rudolph/"  " target=_blank>https://janellenorman94.wordpress.com/2015/02/09/black-history-month-wilma-rudolph/</a>'],
     information: ['<a href="https://www.biography.com/people/wilma-rudolph-9466552"  target=_blank>https://www.biography.com/people/wilma-rudolph-9466552</a>',
     '<a href="http://sports.jrank.org/pages/4098/Rudolph-Wilma-Awards-Accomplishments.html" target=_blank>http://sports.jrank.org/pages/4098/Rudolph-Wilma-Awards-Accomplishments.html</a>',
