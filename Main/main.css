@@ -56,6 +56,11 @@ sans-serif; */
    padding: 30px;
  }
 
+ header p {
+   text-align: center;
+   margin: 0 50px 0 50px;
+ }
+
 /* main.html navbar center */
  .btn-toolbar {
     text-align: center;
