@@ -1,32 +1,20 @@
 
-
-
-function Person(name, quote, title, born, awards, about, foundation, pictures, information) {
-    this.name = name;
-    this.quote = quote;
-    this.title = title;
-    this.born = born;
-    this.awards = awards;
-    this.about = about;
-    this.foundation = foundation;
-    this.pictures = pictures;
-    this.information = information;
-}
-
 let cooper = new Person(
+    "<img src='cooper.jpg' alt='picture of j california cooper' class='img-fluid'/>",
+    "Photographer Unknown",
     "J. California Cooper",
     "&#8220;Some people don't even recognize real love when it comes without being called or sought.&#8221;",
     "Playwright and Author",
     "Nov 10, 1931-September 20, 2014",
     "American Book Award, James Baldwin Writing Award, San Francisco’s Black Playwright Award, and Literary Lion Award from the American Library Association.",
     ["Joan Cooper, known by her pen name, J. California Cooper, was an American playwright and author. She wrote 17 plays and was named Black Playwright of the Year in 1978 for her play Strangers. She is an award-winning writer whose black female characters confront a world of indifference and betrayal, but find kinship there in unexpected places.",],
-    ["<a href='https://www.thriftbooks.com/a/j-california-cooper/203707/' target=_blank>Thrift Books</a>", "<a href='https://www.goodreads.com/author/list/20702.J_California_Cooper' target=_blank>Good Reads</a>"],
-
-    '<a href="https://aalbc.com/authors/author.php?author_name=J.+California+Cooper" target=_blank>https://aalbc.com/authors/author.php?author_name=J.+California+Cooper</a>',
-
-    ['<a href = "https://en.wikipedia.org/wiki/J._California_Cooper" target = _blank > https://en.wikipedia.org/wiki/J._California_Cooper</a>', '<a href = "https://www.nytimes.com/2014/09/26/arts/j-california-cooper-award-winning-writer-dies-at-82.html" target = _blank > https://www.nytimes.com/2014/09/26/arts/j-california-cooper-award-winning-writer-dies-at-82.html</a>']
+    ["<a href='https://aalbc.com/authors/author.php?author_name=J.+California+Cooper' target=_blank>African American Literature Book Club</a>", "<a href='https://www.mahoganybooks.com/search.php?search_query=%20california%20cooper&section=product' target=_blank>Mahogany Books</a>"],
+    '<a href="https://aalbc.com/authors/author.php?author_name=J.+California+Cooper" target=_blank>African American Literature Book Club</a>',
+    ['<a href = "https://en.wikipedia.org/wiki/J._California_Cooper" target = _blank >Wikipedia</a>', '<a href = "https://www.nytimes.com/2014/09/26/arts/j-california-cooper-award-winning-writer-dies-at-82.html" target = _blank >NY Times</a>']
 );
 
+document.getElementById("image").innerHTML = cooper.image;
+document.getElementById("image-cit").innerHTML = cooper.imageCit;
 document.getElementById("name").innerHTML = cooper.name;
 document.getElementById("quote").innerHTML = cooper.quote;
 document.getElementById("title").innerHTML = cooper.title;

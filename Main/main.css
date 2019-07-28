@@ -1,3 +1,21 @@
+:root {
+	--main-cooper-color: #660000;
+	--main-huerta-color: #5ec1a2;
+  --second-huerta-color: #db7093;
+  --main-hurston-color: #3b5691;
+  --main-rudolph-color: #0000ff;
+  --main-truth-color: #003300;
+  --main-walker-color: #bba235;
+	--main-body-padding: 20px;
+  --main-font-family: "Raleway", sans-serif;
+  --second-font-family: 'Source Sans Pro',
+  sans-serif;
+  --third-font-family: 'Playfair Display',
+  serif;
+  --button: padding-left 15px;
+}
+
+
 
  body,
  h1,

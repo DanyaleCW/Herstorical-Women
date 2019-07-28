@@ -1,9 +1,9 @@
 let rudolph = {
     name: "Wilma Glodean Rudolph",
     image: '<img src="rudolph.jpg" alt="Wilma Rudolph holding her medals" class="img-fluid"/>',
-    imageCitation: "Wilma Rudolph holding her Gold Medals",
+    imageCit: "Photographer Unknown",
     quote: '&#8220;My doctor told me I would never walk again. <br> My mother told me I would. <br> I believed my mother&#8221;',
-    description: "Olympic Champion",
+    title: "Olympic Champion",
     born: "June 23, 1940 - November 12, 1994",
     awardsHonors: ["First American Woman to win three Olympic gold medals",
     "1956 Bronze medal, 4 X 100-meter relay, Olympic Games, Melbourne, Australia", "1960 World record in the 200-meter race at the Olympic Trials at Texas Christian University", "1960 Gold medals, 100-meter dash,  200-meter dash, and 4 × 100-meter relay, Olympic Games, Rome, Italy", "1961 Received Sullivan Award and Associated Press Female Athlete of the Year Award", "1962 Received Babe Didrikson Zaharias Award", "1973 Inducted into Black Athletes Hall of Fame", "1974 Inducted into National Track and Field Hall of Fame", "1980 Inducted into Women's Sports Foundation Hall of Fame", "1983 Inducted into U.S. Olympic Hall of Fame", "1987 Received National Collegiate Athletic Association's Silver Anniversary Award", "1993 Honored as one of the National Sports Awards 'Great Ones'"],
@@ -23,14 +23,14 @@ let rudolph = {
     images: function () {
         return this.image;
     },
-    imageCitations: function () {
-        return this.imageCitation;
+    imageCit: function () {
+        return this.imageCit;
     },
     quotes: function () {
         return this.quote;
     },
-    descriptions: function () {
-        return this.description;
+    title: function () {
+        return this.title;
     },
     dates: function () {
         return this.born;
@@ -45,19 +45,19 @@ let rudolph = {
         return this.foundation;
     },
     pictures: function () {
-        return "Pictures" + "<br>" + this.picture[0] + "<br>" + " " + this.picture[1] + "<br>" + " " + this.picture[2];
+        return this.picture[0] + "<br>" + " " + this.picture[1] + "<br>" + " " + this.picture[2];
     },
     informations: function () {
-        return "Information" + "<br>" + " " + this.information[0] + "<br>" + " " + this.information[1] + "<br>" + " " + this.information[2];
+        return  this.information[0] + "<br>" + " " + this.information[1] + "<br>" + " " + this.information[2];
     }
 };
 
 // Display data from the object:
 document.getElementById("name").innerHTML = rudolph.fullName();
 document.getElementById("image").innerHTML = rudolph.images();
-document.getElementById("image-cit").innerHTML = rudolph.imageCitations();
+document.getElementById("image-cit").innerHTML = rudolph.imageCit();
 document.getElementById("quote").innerHTML = rudolph.quotes();
-document.getElementById("description").innerHTML = rudolph.descriptions();
+document.getElementById("title").innerHTML = rudolph.title();
 document.getElementById("born").innerHTML = rudolph.dates();
 document.getElementById("awards").innerHTML = rudolph.awards();
 document.getElementById("about").innerHTML = rudolph.abouts();

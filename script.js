@@ -26,7 +26,124 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-function Person(name, title, quote, born, awards, about, foundation, pictures, information) {
+// -------------NAVIGATION TEMPLATE------------
+class MyTemplate extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `<div class="container">
+  <div class="btn-toolbar">
+    <div class="btn-group btn-group-sm">
+      <button class="btn btn-default"><a href="./ComingSoon.html">A</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">B</a></button>
+      <button class="btn btn-default"><a href="./cpage/c.html">C</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">D</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">E</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">F</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">G</a></button>
+      <button class="btn btn-default"><a href="./hpage/h.html">H</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">I</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">J</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">K</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">L</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">M</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">N</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">O</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">P</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">Q</a></button>
+      <button class="btn btn-default"><a href="./rpage/r.html">R</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">S</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">T</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">U</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">V</a></button>
+      <button class="btn btn-default"><a href="./wpage/w.html">W</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">X</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">Y</a></button>
+      <button class="btn btn-default"><a href="./ComingSoon.html">Z</a></button>
+    </div>
+  </div>
+</div>`;
+}
+}
+
+customElements.define('nav-template', MyTemplate);
+
+
+// -------------BODY TEMPLATE------------------
+class BodyTemplate extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `<div class="button">
+  <button type="button" class="btn btn">
+  <a id="home" href="javascript:gohome();">Home</a>
+  </button>
+</div>
+ <br><br>
+<p id="demo"></p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4">
+        <div id="image"></div>
+        <div class="desc" id="image-cit"></div>
+      </div>
+
+    <div class="col-sm-8">
+      <h1 id="name"></h1>
+      <p id="quote"></p>
+    </div>
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid">
+    <p id="title"></p>
+    <h3>Born</h3>
+      <p id="born"></p>
+
+  <h3>Awards & Honors</h3>
+    <p id="awards"></p>
+
+  <h3>About</h3>
+    <p id="about">
+    </p>
+
+  <h4 id="foundation"></h4><br>
+  <h5>Citation Information</h5>
+  <h6>Picture</h6>
+    <p id="pictures"></p><br>
+  <h6>Information</h6>
+    <p id="information"></p>`;
+    }
+    }
+
+    customElements.define('body-template', BodyTemplate);
+// ------------FOOTER INDIVIDUAL PAGES----------
+
+class FooterTemplate extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `<footer id="foot-cont">
+    <a target="_blank" href="https://github.com/DanyaleCW">
+    <i class="fa fa-github-alt" style="font-size:36px"></i>
+    </a>
+    <a target="_blank" href="https://twitter.com/DanyaleCWalker">
+    <i class="fa fa-twitter w3-hover-opacity" style="font-size:36px"></i>
+    </a>
+    <a target="_blank" href="https://www.linkedin.com/in/danyale-c-walker-b9385816">
+    <i class="fa fa-linkedin w3-hover-opacity" style="font-size:36px"></i>
+    </a>
+
+    <!-- <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button> -->
+    <p>Written, Coded, and Designed by Danyale C. Walker</p>
+
+    <button onclick="topFunction()" id="footer" title="Go to top">Top</button>
+</footer>`;
+}
+}
+
+customElements.define('footer-template', FooterTemplate);
+
+
+
+class Person {
+  constructor(image, imageCit, name, title, quote, born, awards, about, foundation, pictures, information) {
+    this.image = image;
+    this.imageCit = imageCit;
     this.name = name;
     this.title = title;
     this.quote = quote;
@@ -36,9 +153,12 @@ function Person(name, title, quote, born, awards, about, foundation, pictures, i
     this.foundation = foundation;
     this.pictures = pictures;
     this.information = information;
+  }
 }
 
 let walker = new Person(
+    '<img class="wonderful" src="../Walker/tin.jpg">',
+    "Photographer Unknown",
     "Madam C.J. Walker",
     "Entrepreneur, Philanthropist, Self-made Millionaire, and a Political, Social and Civil Rights Activist",
     ["&#8220;Do Not Sit and Wait for", "the Opportunities to Come", "Get Up and Make Them&#8221;"],
@@ -47,8 +167,9 @@ let walker = new Person(
     "Madam C. J. Walker was born in 1867 to two sharecroppers, her given name was Sarah Breedlove. She is best known for inventing, manufacturing and marketing her own line of hair care products. By 1917, the Madam C.J. Walker Manufacturing Company was the largest black-owned business in the country with a revenue of over $500,000. Her company allowed black women to be financially independent, educate their children and own their own homes. Madam Walker was also a philanthropist. She bequeathed 2/3 of her estate and future profits to charity and supportedseveral organizations and causes such as the National Association of Colored People (NAACP),the Tuskegee Institute and anti-lynching legislation, to name a few. When Madam C. J. Walker died in 1919, she left an estate worth over $1 million.",
     '<a href = "https://www.mcjwbeautyculture.com/" target = _blank>Madam C. J. Walker Beauty Culture</a>', ['<a href="https: //urbanbeautyex.com/foreverbeautiful-madame-c-j-walker/" target=_blank>https://urbanbeautyex.com/foreverbeautiful-madame-c-j-walker/</a>', '<a href="https://www.timetoastcom/timelines/madam-cj-walker-black-history-project" target=_blank> https://www.timetoast.com/timelines/madam-cj-walker-black-history-project</a>'], ['<a href="https://en.wikipedia.org/wiki/Madam_C._J._Walker" target=_blank> https://en.wikipedia.org/wiki/Madam_C._J._Walker</a>', '<a href="http://www.madamcjwalker.com" target=_blank> http://www.madamcjwalker.com</a>']
 
-)
-
+);
+document.getElementById("walker-image").innerHTML = walker.image;
+document.getElementById("walker-image-cit").innerHTML = walker.imageCit;
 document.getElementById("walker-name").innerHTML = walker.name;
 document.getElementById("walker-title").innerHTML = walker.title;
 document.getElementById("walker-quote").innerHTML = walker.quote[0] + "<br>" + walker.quote[1] + "<br>" + walker.quote[2];
@@ -58,6 +179,39 @@ document.getElementById("walker-about").innerHTML = walker.about;
 document.getElementById("walker-foundation").innerHTML = "Buy Madam C. J. Walker products at" + " " + walker.foundation;
 document.getElementById("walker-pictures").innerHTML = walker.pictures[0] + "<br>" + walker.pictures[1];
 document.getElementById("walker-information").innerHTML = walker.information[0] + "<br>" + walker.information[1];
+
+
+let truth = new Person (
+    "Sojourner Truth",
+    "Abolitionist, Author, Human Rights Activist",
+    // '<img src="truth.png" alt="painting of Sojourner Truth" class="img-fluid"/>',
+    '&#8220;I feel safe in the midst of my enemies, <br> for the truth is all powerful and will prevail.&#8221;',
+    "c. 1797 - November 26, 1883",
+    " insert information &$^$&$&!!!!!!",
+    "Sojourner Truth was born Isabella Baumfree in Swartekill, N.Y. to James and Elizabeth Baumfree, she is one of 12 children. James was a captured in what is modern day Ghana and Elizabeth was the daughter of Guineas slaves. The family was owned by Colonel Hardenbergh, and lived in Esopus, NY, a Dutch settled colony. Truth and her family spoke Dutch - fix the wording!!!!!",
+    "Please visit and donate to <a href='https://www.sojournertruthhouse.org' target=_blank>The Sojourner Truth House</a> which is a nonprofit organization that serves homeless and at-risk women and their children.",
+    ['<a href="https://pixels.com/featured/sojourner-truth-linda-ruiz-lozito.html" target=_blank>https://pixels.com/featured/sojourner-truth-linda-ruiz-lozito.html</a>',
+    '<a href="https://myhero.com/W_truth_dnhs_US_2010_ul" target=_blank>https://myhero.com/W_truth_dnhs_US_2010_ul</a>',
+    '<a href="https://janellenorman94.wordpress.com/2015/02/09/black-history-month-wilma-truth/" target=_blank>https://janellenorman94.wordpress.com/2015/02/09/black-history-month-wilma-truth/</a>'],
+    ['<a https://www.biography.com/people/sojourner-truth-9511284" target=_blank>https://www.biography.com/people/sojourner-truth-9511284</a>',
+    '<a href="http://sports.jrank.org/pages/4098/truth-Wilma-Awards-Accomplishments.html" target=_blank>http://sports.jrank.org/pages/4098/truth-Wilma-Awards-Accomplishments.html</a>',
+    '<a href="https://en.wikipedia.org/wiki/Wilma_truth" target=_blank>https://en.wikipedia.org/wiki/Wilma_truth</a>']
+);
+
+
+// Display data from the object:
+document.getElementById("truth-name").innerHTML = truth.name;
+document.getElementById("truth-title").innerHTML = truth.title;
+document.getElementById("truth-quote").innerHTML = truth.quote;
+document.getElementById("truth-born").innerHTML = truth.born;
+document.getElementById("truth-awards").innerHTML = truth.awards;
+document.getElementById("truth-about").innerHTML = truth.about;
+document.getElementById("truth-foundation").innerHTML = truth.foundation;
+document.getElementById("truth-pictures").innerHTML = truth.pictures[0] + "<br>" + truth.pictures[1] + "<br>" + truth.pictures[2];
+document.getElementById("truth-information").innerHTML = truth.information[0] + "<br>" + truth.information[1] + "<br>" + truth.information[2];
+
+
+
 
 // let rudolph = new Person{
 //     name: "Wilma Glodean Rudolph",
