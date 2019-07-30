@@ -1,29 +1,29 @@
 //when user clicks returns to main html page
 function gohome() {
-    window.location.href = "../main.html"
+  window.location.href = "../main.html"
 }
 
 function next() {
-    window.location.href = "./Cooper/cooper.html"
+  window.location.href = "./Cooper/cooper.html"
 }
 
 // When the user scrolls down 95px from the top of the document, show the button
-window.onscroll = function () {
-    scrollFunction()
+window.onscroll = function() {
+  scrollFunction()
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("footer").style.display = "block";
-    } else {
-        document.getElementById("footer").style.display = "none";
-    }
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("footer").style.display = "block";
+  } else {
+    document.getElementById("footer").style.display = "none";
+  }
 }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 // -------------NAVIGATION TEMPLATE------------
@@ -58,10 +58,13 @@ class MyTemplate extends HTMLElement {
       <button class="btn btn-default"><a href="./ComingSoon.html">X</a></button>
       <button class="btn btn-default"><a href="./ComingSoon.html">Y</a></button>
       <button class="btn btn-default"><a href="./ComingSoon.html">Z</a></button>
+      <button class="btn btn-default">
+        <a id="home" href="javascript:gohome();">Home</a>
+      </button>
     </div>
   </div>
 </div>`;
-}
+  }
 }
 
 customElements.define('nav-template', MyTemplate);
@@ -93,26 +96,25 @@ class BodyTemplate extends HTMLElement {
   <br>
   <div class="container-fluid">
     <p id="title"></p>
-    <h3>Born</h3>
+    <h3>Sunrise - Sunset</h3>
       <p id="born"></p>
 
   <h3>Awards & Honors</h3>
     <p id="awards"></p>
 
   <h3>About</h3>
-    <p id="about">
-    </p>
+    <p id="about"></p>
 
   <h4 id="foundation"></h4><br>
   <h5>Citation Information</h5>
-  <h6>Picture</h6>
+  <h6>Pictures</h6>
     <p id="pictures"></p><br>
   <h6>Information</h6>
     <p id="information"></p>`;
-    }
-    }
+  }
+}
 
-    customElements.define('body-template', BodyTemplate);
+customElements.define('body-template', BodyTemplate);
 // ------------FOOTER INDIVIDUAL PAGES----------
 
 class FooterTemplate extends HTMLElement {
@@ -133,7 +135,7 @@ class FooterTemplate extends HTMLElement {
 
     <button onclick="topFunction()" id="footer" title="Go to top">Top</button>
 </footer>`;
-}
+  }
 }
 
 customElements.define('footer-template', FooterTemplate);
@@ -156,18 +158,22 @@ class Person {
   }
 }
 
-let walker = new Person(
-    '<img class="wonderful" src="../Walker/tin.jpg">',
-    "Photographer Unknown",
-    "Madam C.J. Walker",
-    "Entrepreneur, Philanthropist, Self-made Millionaire, and a Political, Social and Civil Rights Activist",
-    ["&#8220;Do Not Sit and Wait for", "the Opportunities to Come", "Get Up and Make Them&#8221;"],
-    "December 23, 1867 – May 25, 1919",
-    "Junior Achievement U.S. Business Hall of Fame and National Women’s Hall of Fame for Cosmetology and Direct Sales.",
-    "Madam C. J. Walker was born in 1867 to two sharecroppers, her given name was Sarah Breedlove. She is best known for inventing, manufacturing and marketing her own line of hair care products. By 1917, the Madam C.J. Walker Manufacturing Company was the largest black-owned business in the country with a revenue of over $500,000. Her company allowed black women to be financially independent, educate their children and own their own homes. Madam Walker was also a philanthropist. She bequeathed 2/3 of her estate and future profits to charity and supportedseveral organizations and causes such as the National Association of Colored People (NAACP),the Tuskegee Institute and anti-lynching legislation, to name a few. When Madam C. J. Walker died in 1919, she left an estate worth over $1 million.",
-    '<a href = "https://www.mcjwbeautyculture.com/" target = _blank>Madam C. J. Walker Beauty Culture</a>', ['<a href="https: //urbanbeautyex.com/foreverbeautiful-madame-c-j-walker/" target=_blank>https://urbanbeautyex.com/foreverbeautiful-madame-c-j-walker/</a>', '<a href="https://www.timetoastcom/timelines/madam-cj-walker-black-history-project" target=_blank> https://www.timetoast.com/timelines/madam-cj-walker-black-history-project</a>'], ['<a href="https://en.wikipedia.org/wiki/Madam_C._J._Walker" target=_blank> https://en.wikipedia.org/wiki/Madam_C._J._Walker</a>', '<a href="http://www.madamcjwalker.com" target=_blank> http://www.madamcjwalker.com</a>']
+let walker = new Person (
+  '<img class="wonderful" src="../Walker/tin.jpg">',
+  "Photographer Unknown",
+  "Madam C.J. Walker",
+  "Entrepreneur, Philanthropist, Self-made Millionaire, and a Political, Social and Civil Rights Activist",
+  ["&#8220;Do Not Sit and Wait for", "the Opportunities to Come", "Get Up and Make Them&#8221;"],
+  "December 23, 1867 – May 25, 1919",
+  "Junior Achievement U.S. Business Hall of Fame and National Women’s Hall of Fame for Cosmetology and Direct Sales.",
+  "Madam C. J. Walker was born in 1867 to two sharecroppers, her given name was Sarah Breedlove. She is best known for inventing, manufacturing and marketing her own line of hair care products. By 1917, the Madam C.J. Walker Manufacturing Company was the largest black-owned business in the country with a revenue of over $500,000. Her company allowed black women to be financially independent, educate their children and own their own homes. Madam Walker was also a philanthropist. She bequeathed 2/3 of her estate and future profits to charity and supportedseveral organizations and causes such as the National Association of Colored People (NAACP),the Tuskegee Institute and anti-lynching legislation, to name a few. When Madam C. J. Walker died in 1919, she left an estate worth over $1 million.",
+  ['<a href="https://www.mcjwbeautyculture.com/" target=_blank>Madam C. J. Walker Beauty Culture</a>'],
+  ['<a href="https://nmaahc.si.edu/explore/stories/collection/sizzle" target=_blank>National Museum of African American History & Culture</a>',
+  '<a href="http://www.madamcjwalker.com" target=_blank>MadamCJWalker.com</a>'],
+  ['<a href="https://en.wikipedia.org/wiki/Madam_C._J._Walker" target=_blank>Wikipedia</a>','<a href="http://www.madamcjwalker.com" target=_blank>MadamCJWalker.com</a>']
+)
 
-);
+
 document.getElementById("walker-image").innerHTML = walker.image;
 document.getElementById("walker-image-cit").innerHTML = walker.imageCit;
 document.getElementById("walker-name").innerHTML = walker.name;
@@ -181,21 +187,23 @@ document.getElementById("walker-pictures").innerHTML = walker.pictures[0] + "<br
 document.getElementById("walker-information").innerHTML = walker.information[0] + "<br>" + walker.information[1];
 
 
-let truth = new Person (
-    "Sojourner Truth",
-    "Abolitionist, Author, Human Rights Activist",
-    // '<img src="truth.png" alt="painting of Sojourner Truth" class="img-fluid"/>',
-    '&#8220;I feel safe in the midst of my enemies, <br> for the truth is all powerful and will prevail.&#8221;',
-    "c. 1797 - November 26, 1883",
-    " insert information &$^$&$&!!!!!!",
-    "Sojourner Truth was born Isabella Baumfree in Swartekill, N.Y. to James and Elizabeth Baumfree, she is one of 12 children. James was a captured in what is modern day Ghana and Elizabeth was the daughter of Guineas slaves. The family was owned by Colonel Hardenbergh, and lived in Esopus, NY, a Dutch settled colony. Truth and her family spoke Dutch - fix the wording!!!!!",
-    "Please visit and donate to <a href='https://www.sojournertruthhouse.org' target=_blank>The Sojourner Truth House</a> which is a nonprofit organization that serves homeless and at-risk women and their children.",
-    ['<a href="https://pixels.com/featured/sojourner-truth-linda-ruiz-lozito.html" target=_blank>https://pixels.com/featured/sojourner-truth-linda-ruiz-lozito.html</a>',
+let truth = new Person(
+  "Sojourner Truth",
+  "Abolitionist, Author, Human Rights Activist",
+  // '<img src="truth.png" alt="painting of Sojourner Truth" class="img-fluid"/>',
+  '&#8220;I feel safe in the midst of my enemies, <br> for the truth is all powerful and will prevail.&#8221;',
+  "c. 1797 - November 26, 1883",
+  " insert information &$^$&$&!!!!!!",
+  "Sojourner Truth was born Isabella Baumfree in Swartekill, N.Y. to James and Elizabeth Baumfree, she is one of 12 children. James was a captured in what is modern day Ghana and Elizabeth was the daughter of Guineas slaves. The family was owned by Colonel Hardenbergh, and lived in Esopus, NY, a Dutch settled colony. Truth and her family spoke Dutch - fix the wording!!!!!",
+  "Please visit and donate to <a href='https://www.sojournertruthhouse.org' target=_blank>The Sojourner Truth House</a> which is a nonprofit organization that serves homeless and at-risk women and their children.",
+  ['<a href="https://pixels.com/featured/sojourner-truth-linda-ruiz-lozito.html" target=_blank>https://pixels.com/featured/sojourner-truth-linda-ruiz-lozito.html</a>',
     '<a href="https://myhero.com/W_truth_dnhs_US_2010_ul" target=_blank>https://myhero.com/W_truth_dnhs_US_2010_ul</a>',
-    '<a href="https://janellenorman94.wordpress.com/2015/02/09/black-history-month-wilma-truth/" target=_blank>https://janellenorman94.wordpress.com/2015/02/09/black-history-month-wilma-truth/</a>'],
-    ['<a https://www.biography.com/people/sojourner-truth-9511284" target=_blank>https://www.biography.com/people/sojourner-truth-9511284</a>',
-    '<a href="http://sports.jrank.org/pages/4098/truth-Wilma-Awards-Accomplishments.html" target=_blank>http://sports.jrank.org/pages/4098/truth-Wilma-Awards-Accomplishments.html</a>',
-    '<a href="https://en.wikipedia.org/wiki/Wilma_truth" target=_blank>https://en.wikipedia.org/wiki/Wilma_truth</a>']
+    '<a href="https://janellenorman94.wordpress.com/2015/02/09/black-history-month-wilma-truth/" target=_blank>https://janellenorman94.wordpress.com/2015/02/09/black-history-month-wilma-truth/</a>'
+  ],
+  ['<a https://www.biography.com/people/sojourner-truth-9511284" target=_blank>https://www.biography.com/people/sojourner-truth-9511284</a>'],
+    ['<a href="http://sports.jrank.org/pages/4098/truth-Wilma-Awards-Accomplishments.html" target=_blank>http://sports.jrank.org/pages/4098/truth-Wilma-Awards-Accomplishments.html</a>',
+    '<a href="https://en.wikipedia.org/wiki/Wilma_truth" target=_blank>https://en.wikipedia.org/wiki/Wilma_truth</a>'
+  ]
 );
 
 

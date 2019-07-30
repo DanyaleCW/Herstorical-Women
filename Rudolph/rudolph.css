@@ -47,13 +47,17 @@ h5,
     font-size: 20px;
 }
 
+.btn {
+    background-color: blue;
+}
+
 a {
-    text-decoration: none;
     color: blue;
 }
 
 .btn-toolbar {
     text-align: center;
+    color: blue;
 }
 
 footer {
