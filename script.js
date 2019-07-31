@@ -32,32 +32,33 @@ class MyTemplate extends HTMLElement {
     this.innerHTML = `<div class="container">
   <div class="btn-toolbar">
     <div class="btn-group btn-group-sm">
-      <button class="btn btn-default"><a href="./ComingSoon.html">A</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">B</a></button>
+      <button class="btn btn-default"><a href="
+      Coming-Soon/ComingSoon.html">A</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">B</a></button>
       <button class="btn btn-default"><a href="./cpage/c.html">C</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">D</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">E</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">F</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">G</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">D</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">E</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">F</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">G</a></button>
       <button class="btn btn-default"><a href="./hpage/h.html">H</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">I</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">J</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">K</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">L</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">M</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">N</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">O</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">P</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">Q</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">I</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">J</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">K</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">L</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">M</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">N</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">O</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">P</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">Q</a></button>
       <button class="btn btn-default"><a href="./rpage/r.html">R</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">S</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">T</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">U</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">V</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">S</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">T</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">U</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">V</a></button>
       <button class="btn btn-default"><a href="./wpage/w.html">W</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">X</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">Y</a></button>
-      <button class="btn btn-default"><a href="./ComingSoon.html">Z</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">X</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">Y</a></button>
+      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">Z</a></button>
       <button class="btn btn-default">
         <a id="home" href="javascript:gohome();">Home</a>
       </button>
@@ -166,7 +167,7 @@ let walker = new Person (
   ["&#8220;Do Not Sit and Wait for", "the Opportunities to Come", "Get Up and Make Them&#8221;"],
   "December 23, 1867 – May 25, 1919",
   "Junior Achievement U.S. Business Hall of Fame and National Women’s Hall of Fame for Cosmetology and Direct Sales.",
-  "Madam C. J. Walker was born in 1867 to two sharecroppers, her given name was Sarah Breedlove. She is best known for inventing, manufacturing and marketing her own line of hair care products. By 1917, the Madam C.J. Walker Manufacturing Company was the largest black-owned business in the country with a revenue of over $500,000. Her company allowed black women to be financially independent, educate their children and own their own homes. Madam Walker was also a philanthropist. She bequeathed 2/3 of her estate and future profits to charity and supportedseveral organizations and causes such as the National Association of Colored People (NAACP),the Tuskegee Institute and anti-lynching legislation, to name a few. When Madam C. J. Walker died in 1919, she left an estate worth over $1 million.",
+  "Madam C. J. Walker was born in 1867 to two sharecroppers, her given name was Sarah Breedlove. She is best known for inventing, manufacturing and marketing her own line of hair care products. By 1917, the Madam C.J. Walker Manufacturing Company was the largest black-owned business in the country with a revenue of over $500,000. Her company allowed black women to be financially independent, educate their children and own their own homes. Madam Walker was also a philanthropist. She bequeathed 2/3 of her estate and future profits to charity and supportedseveral organizations and causes such as the National Association of Colored People (NAACP), the Tuskegee Institute and anti-lynching legislation, to name a few. When Madam C. J. Walker died in 1919, she left an estate worth over $1 million.",
   ['<a href="https://www.mcjwbeautyculture.com/" target=_blank>Madam C. J. Walker Beauty Culture</a>'],
   ['<a href="https://nmaahc.si.edu/explore/stories/collection/sizzle" target=_blank>National Museum of African American History & Culture</a>',
   '<a href="http://www.madamcjwalker.com" target=_blank>MadamCJWalker.com</a>'],
