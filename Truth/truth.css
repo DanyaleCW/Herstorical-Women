@@ -1,141 +1,117 @@
-/* Headers:
-font-family: 'Playfair Display',
-serif;
-font-family: 'News Cycle',
-sans-serif;
-font-family: 'Rubik',
-sans-serif; */
+body {
+  padding: 17px;
+}
 
-/* Body:
-font-family: 'Lato',
-sans-serif;
-font-family: 'Merriweather',
-serif;
-font-family: 'Merriweather Sans',
-sans-serif;
-font-family: 'Source Sans Pro',
-sans-serif;
-font-family: 'Libre Baskerville',
-serif; */
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif
+}
 
-/* Multipurpose:
-font-family: 'Roboto',
-sans-serif;
-font-family: 'Titillium Web',
-sans-serif;
-font-family: 'Libre Franklin',
-sans-serif;
-font-family: 'Work Sans',
-sans-serif; */
+a {
+  text-decoration: none;
+}
 
- body {
-     padding: 17px;
- }
+.button {
+  padding-left: 15px;
+}
 
- body,
- h1,
- h2,
- h3,
- h4,
- h5 {
-     font-family: "Raleway", sans-serif
- }
+.btn {
+  background-color: rgb(0, 77, 0);
+}
 
- a {
-     text-decoration: none;
- }
+#home {
+  color: white;
+}
 
- .button {
-     padding-left: 15px;
- }
+#name {
+    padding-top: 15%;
+    text-align: center;
+}
 
- .btn {
-     background-color: rgb(0, 77, 0);
- }
+#quote {
+    text-align: center;
+    color: rgb(0, 77, 0);
+}
 
-  #home {
-      color: white;
-  }
+#image-cit {
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    text-align: center;
+}
 
- .desc {
-     font-size: 18px;
-     text-align: center;
- }
+#description {
+    font-size: 20px;
+}
 
- #name {
-     text-align: center;
-     font-family: 'Source Sans Pro',
-     sans-serif;
-     font-size: 60px;
- }
+.desc {
+  font-size: 18px;
+  text-align: center;
+}
 
- #quote {
-   text-align: center;
-   font-family: 'Source Sans Pro',
-   sans-serif;
-   color: rgb(0, 51, 0);
- }
+p {
+  font-size: 18px;
+}
 
- p {
-     font-size: 18px;
- }
+img {
+  height: 550px;
+  width: 550px;
+}
 
- h3,
- h4,
- p {
-     font-family: 'Playfair Display', serif;
- }
+a {
+  color: rgb(0, 51, 0);
+}
 
- a {
-     color: rgb(0, 51, 0);
- }
+.col-sm-8 {
+  top: 175px;
+}
 
- .col-sm-8 {
-     top: 175px;
- }
+footer {
+  padding-top: 50px;
+}
 
- footer {
-     padding-top: 50px;
- }
+.btn-toolbar {
+  text-align: center;
+}
 
- .btn-toolbar {
-     text-align: center;
- }
-
- #foot-cont {
-     padding: 15px;
- }
+#foot-cont {
+  padding: 15px;
+}
 
 #footer {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Fixed/sticky position */
-    bottom: 20px;
-    /* Place the button at the bottom of the page */
-    right: 30px;
-    /* Place the button 30px from the right */
-    z-index: 99;
-    /* Make sure it does not overlap */
-    border: none;
-    /* Remove borders */
-    outline: none;
-    /* Remove outline */
-    background-color: rgb(0, 51, 0);
-    /* Set a background color */
-    color: white;
-    /* Text color */
-    cursor: pointer;
-    /* Add a mouse pointer on hover */
-    padding: 15px;
-    /* Some padding */
-    border-radius: 10px;
-    /* Rounded corners */
-    font-size: 18px;
-    /* Increase font size */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: rgb(0, 51, 0);
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
 }
 
 #footer:hover {
-    background-color: #1aff9c;
-    /* Add a dark-grey background on hover */
+  background-color: rgb(0, 77, 0);
+  /* Add a dark-grey background on hover */
 }

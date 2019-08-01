@@ -3,13 +3,12 @@
 var myFather = new Person("John", "Doe", 50, "blue");
 
 document.getElementById("demo").innerHTML =
-"My father is " + myFather.age + "."; 
+"My father is " + myFather.age + ".";
 
-function Person(name, image, imageCitation, quote, description, 
-born, awardsHonors, about, foundation, information) {
+function Person(name, image, imageCit, quote, description, born, awardsHonors, about, foundation, information) {
       this.name = name;
       this.image = image;
-      this.imageCitation = imageCitation;
+      this.imageCit = imageCit;
       this.quote = quote;
       this.description = description;
       this.born = born;
@@ -21,16 +20,16 @@ born, awardsHonors, about, foundation, information) {
 }
 
 document.getElementById("name").innerHTML = name();
-  document.getElementById("image").innerHTML = .images;
+  document.getElementById("image").innerHTML = .image;
   document.getElementById("image-cit").innerHTML = .imageCitations();
-  document.getElementById("quote").innerHTML =  .quotes();
+  document.getElementById("quote").innerHTML =  .quote();
   document.getElementById("description").innerHTML =  .descriptions();
-  document.getElementById("born").innerHTML =  .dates();
+  document.getElementById("born").innerHTML =  .born();
   document.getElementById("awards").innerHTML =  .awards();
-  document.getElementById("about").innerHTML =  .abouts();
-  document.getElementById("foundation").innerHTML =  .foundations();
+  document.getElementById("about").innerHTML =  .about();
+  document.getElementById("foundation").innerHTML =  .foundation();
   document.getElementById("pictures").innerHTML =  .pictures();
-  document.getElementById("information").innerHTML = .informations();
+  document.getElementById("information").innerHTML = .information();
 
  var huerta = {
     name: "Dolores Clara Fernández Huerta",

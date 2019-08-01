@@ -26,42 +26,42 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-// -------------NAVIGATION TEMPLATE------------
+// --------NAVIGATION TEMPLATE MAIN PAGE---------
 class MyTemplate extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `<div class="container">
-  <div class="btn-toolbar">
-    <div class="btn-group btn-group-sm">
-      <button class="btn btn-default"><a href="
-      Coming-Soon/ComingSoon.html">A</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">B</a></button>
-      <button class="btn btn-default"><a href="./cpage/c.html">C</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">D</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">E</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">F</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">G</a></button>
-      <button class="btn btn-default"><a href="./hpage/h.html">H</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">I</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">J</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">K</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">L</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">M</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">N</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">O</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">P</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">Q</a></button>
-      <button class="btn btn-default"><a href="./rpage/r.html">R</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">S</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">T</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">U</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">V</a></button>
-      <button class="btn btn-default"><a href="./wpage/w.html">W</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">X</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">Y</a></button>
-      <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">Z</a></button>
-      <button class="btn btn-default">
-        <a id="home" href="javascript:gohome();">Home</a>
-      </button>
+    <div class="btn-toolbar">
+      <div class="btn-group btn-group-sm">
+        <button class="btn btn-default"><a href="
+        Coming-Soon/ComingSoon.html">A</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">B</a></button>
+        <button class="btn btn-default"><a href="./cpage/c.html">C</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">D</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">E</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">F</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">G</a></button>
+        <button class="btn btn-default"><a href="./hpage/h.html">H</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">I</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">J</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">K</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">L</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">M</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">N</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">O</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">P</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">Q</a></button>
+        <button class="btn btn-default"><a href="./rpage/r.html">R</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">S</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">T</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">U</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">V</a></button>
+        <button class="btn btn-default"><a href="./wpage/w.html">W</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">X</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">Y</a></button>
+        <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">Z</a></button>
+        <button class="btn btn-default">
+          <a id="home" href="javascript:gohome();">Home</a>
+        </button>
     </div>
   </div>
 </div>`;
@@ -70,6 +70,100 @@ class MyTemplate extends HTMLElement {
 
 customElements.define('nav-template', MyTemplate);
 
+// --------NAVIGATION TEMPLATE LETTER PAGES---------
+class LettersTemplate extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML =`<div class="container">
+    <div class="btn-toolbar">
+      <div class="btn-group btn-group-sm">
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">A</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">B</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../cpage/c.html">C</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">D</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">E</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">F</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">G</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../hpage/h.html">H</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">I</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">J</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">K</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">L</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">M</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">N</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">O</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">P</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">Q</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../rpage/r.html">R</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">S</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">T</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">U</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">V</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../wpage/w.html">W</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">X</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">Y</a>
+        </button>
+        <button class="btn btn-default">
+          <a href="../Coming-Soon/ComingSoon.html">Z</a>
+        </button>
+        <button class="btn btn-default">
+          <a id="home" href="javascript:gohome();">Home</a>
+        </button>
+      </div>
+    </div>
+  </div>`;
+  }
+}
+
+customElements.define('nav-letters', LettersTemplate);
 
 // -------------BODY TEMPLATE------------------
 class BodyTemplate extends HTMLElement {
@@ -116,6 +210,7 @@ class BodyTemplate extends HTMLElement {
 }
 
 customElements.define('body-template', BodyTemplate);
+
 // ------------FOOTER INDIVIDUAL PAGES----------
 
 class FooterTemplate extends HTMLElement {
@@ -159,7 +254,7 @@ class Person {
   }
 }
 
-let walker = new Person (
+let walker = new Person(
   '<img class="wonderful" src="../Walker/tin.jpg">',
   "Photographer Unknown",
   "Madam C.J. Walker",
@@ -170,8 +265,9 @@ let walker = new Person (
   "Madam C. J. Walker was born in 1867 to two sharecroppers, her given name was Sarah Breedlove. She is best known for inventing, manufacturing and marketing her own line of hair care products. By 1917, the Madam C.J. Walker Manufacturing Company was the largest black-owned business in the country with a revenue of over $500,000. Her company allowed black women to be financially independent, educate their children and own their own homes. Madam Walker was also a philanthropist. She bequeathed 2/3 of her estate and future profits to charity and supportedseveral organizations and causes such as the National Association of Colored People (NAACP), the Tuskegee Institute and anti-lynching legislation, to name a few. When Madam C. J. Walker died in 1919, she left an estate worth over $1 million.",
   ['<a href="https://www.mcjwbeautyculture.com/" target=_blank>Madam C. J. Walker Beauty Culture</a>'],
   ['<a href="https://nmaahc.si.edu/explore/stories/collection/sizzle" target=_blank>National Museum of African American History & Culture</a>',
-  '<a href="http://www.madamcjwalker.com" target=_blank>MadamCJWalker.com</a>'],
-  ['<a href="https://en.wikipedia.org/wiki/Madam_C._J._Walker" target=_blank>Wikipedia</a>','<a href="http://www.madamcjwalker.com" target=_blank>MadamCJWalker.com</a>']
+    '<a href="http://www.madamcjwalker.com" target=_blank>MadamCJWalker.com</a>'
+  ],
+  ['<a href="https://en.wikipedia.org/wiki/Madam_C._J._Walker" target=_blank>Wikipedia</a>', '<a href="http://www.madamcjwalker.com" target=_blank>MadamCJWalker.com</a>']
 )
 
 
@@ -186,38 +282,6 @@ document.getElementById("walker-about").innerHTML = walker.about;
 document.getElementById("walker-foundation").innerHTML = "Buy Madam C. J. Walker products at" + " " + walker.foundation;
 document.getElementById("walker-pictures").innerHTML = walker.pictures[0] + "<br>" + walker.pictures[1];
 document.getElementById("walker-information").innerHTML = walker.information[0] + "<br>" + walker.information[1];
-
-
-let truth = new Person(
-  "Sojourner Truth",
-  "Abolitionist, Author, Human Rights Activist",
-  // '<img src="truth.png" alt="painting of Sojourner Truth" class="img-fluid"/>',
-  '&#8220;I feel safe in the midst of my enemies, <br> for the truth is all powerful and will prevail.&#8221;',
-  "c. 1797 - November 26, 1883",
-  " insert information &$^$&$&!!!!!!",
-  "Sojourner Truth was born Isabella Baumfree in Swartekill, N.Y. to James and Elizabeth Baumfree, she is one of 12 children. James was a captured in what is modern day Ghana and Elizabeth was the daughter of Guineas slaves. The family was owned by Colonel Hardenbergh, and lived in Esopus, NY, a Dutch settled colony. Truth and her family spoke Dutch - fix the wording!!!!!",
-  "Please visit and donate to <a href='https://www.sojournertruthhouse.org' target=_blank>The Sojourner Truth House</a> which is a nonprofit organization that serves homeless and at-risk women and their children.",
-  ['<a href="https://pixels.com/featured/sojourner-truth-linda-ruiz-lozito.html" target=_blank>https://pixels.com/featured/sojourner-truth-linda-ruiz-lozito.html</a>',
-    '<a href="https://myhero.com/W_truth_dnhs_US_2010_ul" target=_blank>https://myhero.com/W_truth_dnhs_US_2010_ul</a>',
-    '<a href="https://janellenorman94.wordpress.com/2015/02/09/black-history-month-wilma-truth/" target=_blank>https://janellenorman94.wordpress.com/2015/02/09/black-history-month-wilma-truth/</a>'
-  ],
-  ['<a https://www.biography.com/people/sojourner-truth-9511284" target=_blank>https://www.biography.com/people/sojourner-truth-9511284</a>'],
-    ['<a href="http://sports.jrank.org/pages/4098/truth-Wilma-Awards-Accomplishments.html" target=_blank>http://sports.jrank.org/pages/4098/truth-Wilma-Awards-Accomplishments.html</a>',
-    '<a href="https://en.wikipedia.org/wiki/Wilma_truth" target=_blank>https://en.wikipedia.org/wiki/Wilma_truth</a>'
-  ]
-);
-
-
-// Display data from the object:
-document.getElementById("truth-name").innerHTML = truth.name;
-document.getElementById("truth-title").innerHTML = truth.title;
-document.getElementById("truth-quote").innerHTML = truth.quote;
-document.getElementById("truth-born").innerHTML = truth.born;
-document.getElementById("truth-awards").innerHTML = truth.awards;
-document.getElementById("truth-about").innerHTML = truth.about;
-document.getElementById("truth-foundation").innerHTML = truth.foundation;
-document.getElementById("truth-pictures").innerHTML = truth.pictures[0] + "<br>" + truth.pictures[1] + "<br>" + truth.pictures[2];
-document.getElementById("truth-information").innerHTML = truth.information[0] + "<br>" + truth.information[1] + "<br>" + truth.information[2];
 
 
 
