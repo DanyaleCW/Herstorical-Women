@@ -1,7 +1,7 @@
 let rudolph = {
     name: "Wilma Glodean Rudolph",
     image: '<img src="rudolph.jpg" alt="Wilma Rudolph holding her medals" class="img-fluid"/>',
-    imageCit: "Photographer Unknown",
+    imageCit: "Getty Images",
     quote: '&#8220;My doctor told me I would never walk again. <br> My mother told me I would. <br> I believed my mother&#8221;',
     title: "Olympic Champion and Civil Rights Pioneer",
     born: "June 23, 1940 - November 12, 1994",
@@ -21,7 +21,7 @@ let rudolph = {
     images: function () {
         return this.image;
     },
-    imageCit: function () {
+    imageCits: function () {
         return this.imageCit;
     },
     quotes: function () {
@@ -53,7 +53,7 @@ let rudolph = {
 // Display data from the object:
 document.getElementById("name").innerHTML = rudolph.fullName();
 document.getElementById("image").innerHTML = rudolph.images();
-document.getElementById("image-cit").innerHTML = rudolph.imageCit();
+document.getElementById("image-cit").innerHTML = rudolph.imageCits();
 document.getElementById("quote").innerHTML = rudolph.quotes();
 document.getElementById("title").innerHTML = rudolph.titles();
 document.getElementById("born").innerHTML = rudolph.dates();

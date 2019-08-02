@@ -165,7 +165,8 @@ class LettersTemplate extends HTMLElement {
 
 customElements.define('nav-letters', LettersTemplate);
 
-// -------------BODY TEMPLATE------------------
+// -------------BODY TEMPLATE-----------------
+
 class BodyTemplate extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `<div class="button">

@@ -1,26 +1,10 @@
 body {
   padding: 17px;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5 {
   font-family: "Raleway", sans-serif
-}
-
-a {
-  text-decoration: none;
 }
 
 .button {
   padding-left: 15px;
-}
-
-.btn {
-  background-color: rgb(0, 77, 0);
 }
 
 #home {
@@ -44,42 +28,22 @@ a {
     text-align: center;
 }
 
-#description {
-    font-size: 20px;
-}
-
-.desc {
-  font-size: 18px;
-  text-align: center;
-}
-
-p {
-  font-size: 18px;
-}
-
-img {
-  height: 550px;
-  width: 550px;
+.btn {
+  background-color: rgb(0, 77, 0);
 }
 
 a {
   color: rgb(0, 51, 0);
 }
 
-.col-sm-8 {
-  top: 175px;
+.btn-toolbar {
+  text-align: center;
+  color: rgb(0, 51, 0);
 }
 
 footer {
   padding-top: 50px;
-}
-
-.btn-toolbar {
-  text-align: center;
-}
-
-#foot-cont {
-  padding: 15px;
+  padding-left: 15px;
 }
 
 #footer {
