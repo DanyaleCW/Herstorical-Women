@@ -59,9 +59,6 @@ class MyTemplate extends HTMLElement {
         <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">X</a></button>
         <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">Y</a></button>
         <button class="btn btn-default"><a href="Coming-Soon/ComingSoon.html">Z</a></button>
-        <button class="btn btn-default">
-          <a id="home" href="javascript:gohome();">Home</a>
-        </button>
     </div>
   </div>
 </div>`;
