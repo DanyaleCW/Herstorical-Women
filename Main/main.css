@@ -14,12 +14,17 @@
   serif;
   --button: padding-left 15px;
 }
+/* #031d44
+#4171a8
+#e8e9f3
+#cecece
+#a6a6a8 */
 
-
-
- body {
-    font-family: "Raleway", sans-serif;
-    padding-top: 20px;
+/* this is not taking affect due to w3school style sheet */
+html, body {
+  font-family: var(--main-font-family);
+  padding-top: 20px;
+	background-color: #031d44;
  }
 
 
@@ -40,7 +45,7 @@
 
  /* HEADER PICTURES */
   header.pictures {
-    background-color: #666;
+    background-color: #cecece;
     padding: 140px;
     text-align: center;
     font-size: 35px;
@@ -70,6 +75,7 @@
  header {
    text-align: center;
    padding: 30px;
+	 color: #031d44;
  }
 
  /* header p {
